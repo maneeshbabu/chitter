@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :chitter, Chitter.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "welcome",
   database: "chitter_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
