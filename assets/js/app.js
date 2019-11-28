@@ -9,7 +9,8 @@ import css from "../css/app.css"
 //
 // Import dependencies
 //
-import "phoenix_html"
+import "materialize-css"
+import "./application"
 
 // Import local files
 //

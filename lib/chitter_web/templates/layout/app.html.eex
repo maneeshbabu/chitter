@@ -5,26 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Chitter · Phoenix Framework</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
+     <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper primary">
+          <a href="#!" class="brand-logo">&nbsp;CHITTER</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
           </ul>
-        </nav>
-        <a href="http://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
+        </div>
+      </nav>
+    </div>
+    
+    <ul class="sidenav primary-light" id="mobile-demo">
+      <li class="active"><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+    </ul>
+    
+
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= render @view_module, @view_template, assigns %>
     </main>
+
+    <footer class="page-footer accent">     
+      <div class="footer-copyright">
+        <div class="container">
+          © MBM
+          <a class="grey-text text-lighten-4 right" href="#!"></a>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
