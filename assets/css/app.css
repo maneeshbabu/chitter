@@ -1,3 +1,61 @@
 /* This file is for your main application css. */
 
 @import '../node_modules/materialize-css/dist/css/materialize.css';
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.primary-dark {
+    background-color: #E64A19 !important;
+}
+
+.primary {
+    background-color: #FF5722 !important;
+}
+
+.primary-light {
+    background-color: #FFCCBC !important;
+}
+
+.accent {
+    background-color: #607D8B !important;
+}
+
+.primary-text {
+    color: #212121 !important;
+}
+
+.secondary-text {
+    color: #757575 !important;
+}
+
+.divder {
+    color: #BDBDBD !important;
+}
+
+.page-footer {
+    padding-top: 0px;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 95%;
+    }
+}
+
+.container {
+    max-width: 100%;
+}
