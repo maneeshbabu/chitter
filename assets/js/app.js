@@ -10,6 +10,7 @@ import css from "../css/app.css"
 // Import dependencies
 //
 import "materialize-css"
+import "./application"
 
 // Import local files
 //
